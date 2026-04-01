@@ -1,0 +1,19 @@
+.headerMain {
+  background-color: #060314;
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+
+    a {
+      padding: 2em 1em;
+      color: #fff;
+      text-decoration: none;
+
+      &.activeLink {
+        border-bottom: 3px solid #d1c8f3;
+      }
+    }
+  }
+}
