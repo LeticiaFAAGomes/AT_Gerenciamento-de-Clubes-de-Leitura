@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2,
+h1 {
+  padding: 1em;
+  color: #d1c8f3;
+  text-align: center;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: #645a8b;
+  font-weight: 600;
+}

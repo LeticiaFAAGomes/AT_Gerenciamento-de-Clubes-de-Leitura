@@ -1,0 +1,79 @@
+.clubeLista {
+  padding: 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .clubeListaContainer {
+    width: 100%;
+    max-width: 1200px;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+
+      li {
+        padding: 1em;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:nth-child(odd) {
+          background-color: rgba(0, 1, 2, 0.473);
+        }
+        .titulo {
+          width: 100%;
+          padding: 1em;
+        }
+        .delete {
+          padding: 0.3em 0.7em;
+          color: #ffffff;
+          background-color: red;
+          border-radius: 0.2em;
+          font-weight: 700;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .modalBg {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #0b08184b;
+
+    .modal {
+      padding: 3em 5em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2em;
+
+      background-color: #0b0818;
+      color: #ffffff;
+      border-radius: 2em;
+      .modalOpcoes {
+        display: flex;
+        gap: 2em;
+
+        a {
+          padding: 0.6em 2em;
+          background-color: #ffffff;
+          border-radius: 0.7em;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #e9e8e8;
+          }
+        }
+      }
+    }
+  }
+}
