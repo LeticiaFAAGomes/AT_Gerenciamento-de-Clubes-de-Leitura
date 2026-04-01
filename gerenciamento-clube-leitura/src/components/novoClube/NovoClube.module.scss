@@ -24,12 +24,17 @@
       width: 80%;
       display: flex;
       justify-content: center;
+      @media (max-width: 600px) {
+        flex-direction: column;
+        gap: 1em;
+      }
 
       .erro {
         width: 100%;
         padding: 1em;
         position: absolute;
         top: 5.6em;
+        left: 0;
         background-color: red;
         color: #060314;
         text-align: center;
@@ -40,7 +45,8 @@
         border: 0;
         outline: none;
         @media (max-width: 600px) {
-          width: 100%;
+          padding: 1em;
+          border-radius: 1em;
         }
       }
 
@@ -54,6 +60,10 @@
         cursor: pointer;
         &:disabled {
           background-color: #3b3b3b !important;
+        }
+        @media (max-width: 600px) {
+          padding: 1em;
+          border-radius: 1em;
         }
       }
     }
